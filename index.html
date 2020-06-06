@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>http://www.ayytong.com/#/Home/</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        input[type="text"]{
+            background-color:#47244f ;
+            margin:0 0 0 500px;
+        }
+        input[type="password"]{
+            background-color: #47244f;
+        }
+        body{
+            background-image:url('0.JPG.jpg');
+        }
+        a{
+            color:brown;
+        }
+        h1{
+            font-family: "Blackadder ITC";
+            text-shadow:5px 5px 5px;
+            color: olive;
+            margin:0 0 0 150px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+
+        }
+        canvas{
+            maigin:100px 100px 100px 0;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            -webkit-box-shadow:
+                    0 0 2px rgba(0, 0, 0, 0.2),
+                    0 1px 1px rgba(0, 0, 0, .2),
+                    0 3px 0 #ff6e95,
+                    0 4px 0 rgba(0, 0, 0, .2),
+                    0 6px 0 #ff6e95,
+                    0 7px 0 rgba(0, 0, 0, .2);
+            -moz-box-shadow:
+                    0 0 2px rgba(0, 0, 0, 0.2),
+                    1px 1px   0 rgba(0,   0,   0,   .1),
+                    3px 3px   0 rgb(255, 110, 149),
+                    4px 4px   0 rgba(0,   0,   0,   .1),
+                    6px 6px   0 rgb(255, 110, 149),
+                    7px 7px   0 rgba(0,   0,   0,   .1);
+
+
+        }
+        .menu {
+            margin: 10px;
+            border: 1px solid #666;
+            border-bottom: none;
+            width: 120px;
+        }
+
+        .menu li {
+            position: relative;
+            padding: 5px 2px 5px 10px;
+            background: #47244f;
+            border-bottom: 1px solid #ff6e95;
+        }
+
+        .menu li:hover {
+            background: #ff6e95;
+            color: red;
+        }
+
+        .menu li:hover ul {
+            display: block;
+        }
+        .menu li span {
+            margin-right: 5px;
+        }
+        .menu li ul {
+            display: none;
+            position: absolute;
+            left: 120px;
+            width: 120px;
+            top: 0;
+            border: 1px solid #47244f;
+            border-bottom: none;
+        }
+
+        .menu li ul li {
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+<form name="registration" action="" method="get">
+
+    <input type="text" name="username" placeholder="请输入用户名" autofocus autocomplete="on" required>
+    <input type="password" name="psw" placeholder="请输入密码" autocomplete="on" required>
+    <input type="submit" name="submit" value="登录">
+    <a href="zhuce.html" class="registration">注册</a>
+</form>
+<h1>儿童教育网</h1>
+<canvas  id="lyt" style="border:1px ;" width="150" height="150"></canvas>
+<script type="text/javascript">
+
+     var canvas=document.getElementById("lyt");
+     var context=canvas.getContext("2d");
+    context.beginPath();
+    context.fillStyle='#c00';
+    context.strokeStyle='#c00';
+    context.moveTo(75,40);
+    context.bezierCurveTo(75,37,70,25,50,25);
+    context.bezierCurveTo(20,25,20,62.5,20,62.5);
+    context.bezierCurveTo(20,80,40,102,75,120);
+    context.bezierCurveTo(110,102,130,80,130,62.5);
+    context.bezierCurveTo(130,62.5,130,25,100,25);
+    context.bezierCurveTo(85,25,75,37,75,40);
+    context.fill();
+    context.stroke();
+</script>
+<ul class="menu">
+    <li><span class="icon-chrome"></span>幼师之路
+        <ul>
+            <li>教学方法</li>
+            <li>幼教论文</li>
+            <li>学生课堂</li>
+            <li>家长沟通</li>
+            <li>课堂管理</li>
+            <li>课案下载</li>
+        </ul>
+    </li>
+    <li><span class="icon-firefox"></span>园长管理
+        <ul>
+            <li>幼儿园管理</li>
+            <li>行业资源</li>
+            <li>特色教材</li>
+            <li>招生方法</li>
+            <li>环境布置</li>
+            <li>创业故事</li>
+            <li>幼儿园推广</li>
+            <li>园长指南</li>
+        </ul>
+    </li>
+    <li><span class="icon-safari"></span>父母学堂
+        <ul>
+            <li>学校选择</li>
+            <li>快乐成长</li>
+            <li>育儿常识</li>
+            <li>每周一课</li>
+
+        </ul>
+    </li>
+    <li><span class="icon-opera"></span>儿童乐园
+        <ul>
+            <li>思维游戏</li>
+            <li>儿童故事</li>
+            <li>儿童歌曲</li>
+            <li>幼儿舞蹈</li>
+            <li>玩具启智</li>
+            <li>三维拼图</li>
+            <li>儿童演讲与口才</li>
+        </ul>
+    </li>
+    <li><span class="icon-IE"></span>在线问答
+        <ul>
+            <li>家长咨询</li>
+            <li>幼师答疑</li>
+            <li>院长排忧</li>
+        </ul>
+    </li>
+</ul>
+
+</body>
+</html>
